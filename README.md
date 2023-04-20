@@ -1,6 +1,6 @@
 # serialization / deserialization
 
-Serijalizacija je mehanizam pretvaranja objekta u stream bajtova, deserijalizacija je obrnut proces, koji stvara objekat u memoriji
+Serijalizacija je mehanizam pretvaranja objekta u stream bajtova, deserijalizacija je obrnut proces, koji stvara objekat u memoriji. <br>Prvi deo projekta <b>Serijalizacija</b> pravi fajl sa .ser ekstenzijom i u njega smesta tok bajtova objekta klase Knjiga.<br>Drugi deo projekta <b>Deserijalizacija</b> ucitava taj fajl i iz njega pravi objekat Knjiga. Jedno polje je namerno postavljeno na <b>transient</b>, ti podaci se nece deserijalizovati.
 		
 Ova konverzija objekata omogucava da oni mogu da se salju preko mreze, da se cuvaju u fajlu ili u bazi podataka zbog neke kasnije upotrebe, takodje je serijalizovanje neophodno zbog <b>RMI</b> (Remote Method Invocation). RMI omogucava da objekat na jednoj masini pozove metodu objekta na drugoj masini.
 Stream bajtova se cuva u fajlu sa .SER ekstenzijom, koji kao takav je nezavistan od platforme na kojoj se koristi.
